@@ -1,0 +1,31 @@
+package API.IO.Char;
+
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.io.UnsupportedEncodingException;
+
+/**
+ * 缓冲字符输出流
+ * java.io.BufferedWriter
+ * 内部有缓冲区,可以块写文本数据来加快写出数据数度
+ *
+ * java.io.PrintWriter
+ * 具有自动行刷新的缓冲字符输出流,内部总是连接BufferedWriter
+ * 作为其缓冲功能
+ */
+public class PWDemo {
+    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
+        //向pw.txt文件中写入字符串
+        /*
+        PW提供了直接对文件进行操作的构造方法
+        PrintWriter(String path)
+        PrintWriter(File file)
+         */
+        PrintWriter pw=new PrintWriter("pw.txt","UTF-8");
+        pw.println("一直为你奉献青春,军营改变了我.");
+        pw.println("让我依依不舍的,不止你的温柔.");
+        System.out.println("写出完毕");
+        pw.close();
+
+    }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<list>
+    <emp id="1">
+        <name>范传奇</name>
+        <age>22</age>
+        <salary>2000</salary>
+        <gender>women</gender>
+    </emp>包含关系(设置为子标签)
+   <!-- <emp id="1" name="范传奇" age="22" salaty="2000"/>属性-->
+</list>

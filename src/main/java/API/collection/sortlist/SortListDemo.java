@@ -1,0 +1,27 @@
+package API.collection.sortlist;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
+
+/**
+ * 集合的排序
+ * 集合的工具包Collections提供了一个静态方法sort,可以对List集合进行自然排序
+ * 从小到大排序
+ */
+public class SortListDemo {
+    public static void main(String[] args) {
+        List<Integer> list=new ArrayList<>();
+        Random rand=new Random();
+        for(int i=0;i<10;i++){
+            list.add(rand.nextInt(100));
+        }
+        System.out.println(list);
+        Collections.sort(list);
+        System.out.println(list);
+
+        Collections.shuffle(list);//乱序
+        System.out.println(list);
+    }
+}
