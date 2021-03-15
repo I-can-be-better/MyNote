@@ -24,7 +24,7 @@ public class file {
         File file=new File("./demo.TXT");
         String name=file.getName();
         System.out.println(name);
-        long len=file.length();
+        long len=file.length();//文件的字节量
 
         boolean cr=file.canRead();
         System.out.println("可读");
@@ -33,8 +33,21 @@ public class file {
         boolean in=file.isHidden();
         System.out.println("是否隐藏"+in);
 
+        //获取文件的绝对路径
+        File str=file.getAbsoluteFile();
+        System.out.println(str);
 
+        //获取文件/文件夹名称
+        str= new File(file.getName());
+        System.out.println(str);
 
+        //获取父文件夹的路径
+        str= new File(file.getParent());
+        System.out.println(str);
+
+        //获取最后修改时间:毫秒值
+        long l=file.lastModified();
+        System.out.println(l);
 
 
     }

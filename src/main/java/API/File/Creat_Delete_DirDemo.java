@@ -17,6 +17,10 @@ public class Creat_Delete_DirDemo {
             System.out.println("该目录已创建!");
         }
 
+        //获取文件名,返回值为String数组
+        String[] str=dir.list();
+        System.out.println(str);
+
         if(dir.exists()){
             dir.delete();
             /**

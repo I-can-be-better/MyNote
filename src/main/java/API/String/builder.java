@@ -26,6 +26,26 @@ public class builder {
         str=builder.toString();
         System.out.println(str);
 
+        //截取子串
+        String s=str.substring(1,2);
+        System.out.println(s);
+
+        //获取字符串中某个字符最后出现的位置
+        int a=str.lastIndexOf("习");
+        System.out.println(a);
+
+        //获取字符串长度
+        int len=str.length();
+        System.out.println(len);
+
+        //定位某个字符,返回他的位置
+        int  b=str.charAt(1);
+        System.out.println(b);
+
+        //将字符串转成数组
+        byte[] data=str.getBytes();
+        System.out.println(data);
+
         //更换字符串中的内容
         builder.replace(13,18,"改变世界");
         System.out.println(builder.toString());
@@ -41,6 +61,24 @@ public class builder {
         //reverse:将所有内容反转
         builder.reverse();
         System.out.println(builder);
+
+       str="        asg,duGS,DGgsa            ";
+        System.out.println(str.toUpperCase());//变成全大写
+        System.out.println(str.toLowerCase());//变成全小写
+
+        System.out.println(str.trim());//去除首尾两端的空格
+
+        System.out.println(str.split(","));//以指定字符分割
+
+        System.out.println(str.valueOf(10));//将int类型的10转换成String
+
+        System.out.println(str.endsWith("a"));//判断是否以a结尾
+        System.out.println(str.startsWith("b"));//判断是否以b开始
+
+
+
+
+
 
     }
 }

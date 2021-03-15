@@ -2,6 +2,8 @@ package API.object;
 
 /**
  * 测试object常用方法
+ * Object是所有类的超类
+ * 存在于Java.lang.Object包中
  */
 public class text {
     public static void main(String[] args) {
@@ -27,5 +29,8 @@ public class text {
          */
         System.out.println(p.equals(p1));
         //只有自己定义的类才需要重写,idea提供的类基本都是重写过了的,比如string
+
+        int num=p.hashCode();//打印对应的哈希码值,用int类型接收
+        System.out.println(num);
     }
 }

@@ -1,4 +1,4 @@
-package API.collection;
+package API.collection.Queue;
 
 import java.util.LinkedList;
 import java.util.Queue;

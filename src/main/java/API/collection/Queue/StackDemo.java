@@ -1,4 +1,4 @@
-package API.collection;
+package API.collection.Queue;
 
 import java.util.Deque;
 import java.util.LinkedList;
